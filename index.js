@@ -1,23 +1,18 @@
-const groups = document.querySelectorAll('.questionGroup');
+const questions = document.querySelectorAll('.question');
 
-groups.forEach(group => {
-    group.addEventListener("click", () => {
-        group.classList.toggle("active");
+questions.forEach(question => {
+    question.addEventListener("click", () => {
+        let answer = question.nextElementSibling;
+        
+        if(answer.style.display == "none") 
+        {
+            question.style['font-weight'] = "bold";
+            answer.style.display = "block"; 
+        }
+        else 
+        {
+            question.style['font-weight'] = "normal";
+            answer.style.display = "none"; 
+        }
     });
 });
-
-
-
-/*let toggleAnswer = (id) => {
-    let answer = document.getElementById(id);
-
-    if(answer.style.display == "none") 
-    {
-        answer.style.display = "block"; 
-        
-    }
-    else 
-    {
-        answer.style.display = "none"; 
-    }
-}*/

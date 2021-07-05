@@ -1,3 +1,35 @@
-/*.answer {
+body {
+    background: rgb(152, 102, 233);
+    font-size: 12px;
+}
+
+.container {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 9px 20px 20px 0px grey;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.imageWoman {
+    margin-left: -50px;
+
+}
+
+.imageBox {
+    margin-left: -500px;
+    margin-top: 100px;
+}
+
+.question {
+    user-select: none;
+    cursor: pointer;
+}
+
+.answer {
     display: none;
-}*/
+}
+
+
