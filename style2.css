@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    margin: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    background: white;
+    border-radius: 25px;
+    height: 500px;
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+}
+
+.answer {
+    display: none;
+}
+
+.colRight {
+    padding-top: 7Opx;
+}
